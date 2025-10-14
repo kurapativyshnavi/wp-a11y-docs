@@ -88,9 +88,11 @@
   
     <div class="side-bar">
   <header class="site-header">
-
-    <a href="/" class="site-title lh-tight">
+    <div class="lh-wrapper">
+      <img src="/assets/images/logo.jpg" alt="Accessibility: Advocate Equal Access">
+      <a href="/" class="site-title lh-tight">
       WP Accessibility Knowledge Base</a>
+    </div>
     <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
       <span>Menu</span>
       <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
@@ -116,6 +118,8 @@
 
           <a href="/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
 
+          <a href="/docs/start/wp-plugins/" class="nav-list-link">WP Plugins</a></li><li class="nav-list-item">
+
           <a href="/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
 
           <a href="/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
@@ -134,17 +138,153 @@
 
           <a href="/docs/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
 
-          <a href="/docs/topics/" class="nav-list-link">Standards and best practice</a></li><li class="nav-list-item">
-
-          <a href="/docs/testing/" class="nav-list-link">Testing</a></li><li class="nav-list-item">
-
-          <a href="/docs/wordpress-accessibility/" class="nav-list-link">WP and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WP and Accessibility submenu" aria-expanded="false">
+          <a href="/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/docs/wordpress-accessibility/wp-a11y-team/" class="nav-list-link">WP Accessibility Team</a></li></ul></li><li class="nav-list-item">
+          <a href="/docs/topics/wcag/" class="nav-list-link">WCAG and compliance</a></li><li class="nav-list-item">
 
-          <a href="/docs/team-process/" class="nav-list-link">Team and process</a></li><li class="nav-list-item">
+          <a href="/docs/topics/best-practice/" class="nav-list-link">WCAG vs best practice</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/" class="nav-list-link">Content and images</a><button class="nav-list-expander btn-reset" aria-label="Content and images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/content/alt-text/" class="nav-list-link">Alt text for images</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/headings/" class="nav-list-link">Headings</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/links/" class="nav-list-link">Links</a><button class="nav-list-expander btn-reset" aria-label="Links submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/content/links/link-text/" class="nav-list-link">Link texts</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/links/link-image/" class="nav-list-link">Images as links</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/tables/" class="nav-list-link">Tables</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/color/color-contrast-icons/" class="nav-list-link">Color contrast of icons</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/color/color-contrast-forms/" class="nav-list-link">Color contrast in forms</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/meaningful-sequence/" class="nav-list-link">Meaningful sequence</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/design/resources/" class="nav-list-link">Resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/code/semantics/" class="nav-list-link">Semantic HTML</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/tables/" class="nav-list-link">Tables</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/screen-reader-text/" class="nav-list-link">CSS screen-reader-text</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/dynamic-changes/" class="nav-list-link">Feedback on dynamic changes</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/components/" class="nav-list-link">Components</a><button class="nav-list-expander btn-reset" aria-label="Components submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/code/components/skip-links/" class="nav-list-link">Skip links</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/Input-label/" class="nav-list-link">Input and label</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/" class="nav-list-link">Provide help</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/required/" class="nav-list-link">Required fields</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/resources/" class="nav-list-link">Form resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/themes/" class="nav-list-link">Themes</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/plugins/" class="nav-list-link">Plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/testing/" class="nav-list-link">Testing for accessibility</a><button class="nav-list-expander btn-reset" aria-label="Testing for accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/testing/checklists/" class="nav-list-link">Overall checklists</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/keyboard/" class="nav-list-link">Keyboard testing</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/screen-readers/" class="nav-list-link">Screen reader testing</a></li><li class="nav-list-item">
+
+          <a href="/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
 
           <a href="/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
 
@@ -152,17 +292,33 @@
 
           <a href="/blog/" class="nav-list-link">Blog</a></li><li class="nav-list-item">
 
+          <a href="/docs/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
+
           <a href="/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/docs/contribute/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+          <a href="/docs/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
 
-          <a href="/docs/contribute/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+          <a href="/docs/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
 
-          <a href="/docs/contribute/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+          <a href="/docs/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
 
-          <a href="/docs/contribute/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li><li class="nav-list-item">
+          <a href="/docs/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/github/" class="nav-list-link">How to help on GitHub</a><button class="nav-list-expander btn-reset" aria-label="How to help on GitHub submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/contribute/github/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
 
           <a href="/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
 
@@ -177,8 +333,6 @@
           <a href="/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
 
           <a href="/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
-
-          <a href="/docs/about/theme/" class="nav-list-link">Theme of this website</a></li><li class="nav-list-item">
 
           <a href="/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
 
@@ -198,11 +352,11 @@
     
 <div class="search">
   <form class="search-input-wrap" role="search">
-    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
       <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
     </label>
+    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
   </form>
   <div id="search-results" class="search-results"></div>
 </div>
@@ -247,13 +401,22 @@
 
           <h1 id="training-learn-web-accessibility">Training, learn web accessibility</h1>
 
-<h2 id="wp-accessibility-day">WP Accessibility Day</h2>
+<p class="alert">This content needs to be reviewed and expanded. The links need to be checked and updated.
+Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/93">GitHub #93 Training</a>.<br />
+If you want to work on this, please let us know before you start.</p>
 
-<p><a href="https://wpaccessibility.day/">WP Accessibility Day</a> is an online event with a 24-hour single track of presentations. Attendees can register for free and watch live streams of talks held via Zoom with live captions and American Sign Language (ASL) Interpretation. After the conference ends, presentations are edited, transcribed, captioned, and made freely available on the web.</p>
+<h2 id="online-events">Online events</h2>
 
-<h2 id="wordpress-accessibility-meetup">WordPress Accessibility Meetup</h2>
+<h3 id="wp-accessibility-day">WP Accessibility Day</h3>
+
+<p><a href="https://wpaccessibility.day/">WP Accessibility Day</a> is a streamed conference featuring twenty-four hours of free accessibility content, focused on WordPress and content management. Talks range widely across all aspects of accessibility, from the most basic to deep dives on difficult topics. All talks from previous years are archived and captioned. Talks from 2023 forward also include American Sign Language interpretation. Translations of past talks is in progress.</p>
+
+<h3 id="wordpress-accessibility-meetup">WordPress Accessibility Meetup</h3>
 
 <p>The <a href="https://www.meetup.com/wordpress-accessibility-meetup-group/">WordPress Accessibility Meetup</a> is a global group of WordPress developers, designers, and users interested in building more accessible websites. Join us twice per month for meetups on a variety of topics related to making WordPress websites that can be used by people of all abilities.</p>
+
+<h3 id="inclusive-design-24">Inclusive Design 24</h3>
+<p><a href="http://www.id24.org/">Inclusive Design 24</a> (ID24) is a streamed conference featuring twenty-four hours of free accessibility content, ranging from basic accessibility to advanced topics. Almost all talks include detailed examples of how to solve a particular problem accessibly, along with general advice for designers, developers and accessibility advocates. All the talks from previous years are archived and captioned.</p>
 
 <h2 id="online-training">Online training</h2>
 <p>There are many places around the internet where you can learn more about Accessibility either within the WordPress ecosystem or as a general technical concept. Here are a few suggestions:</p>
@@ -267,6 +430,49 @@
   <li>Mike Gifford maintains a large list of courses, webinars, educational videos and more, offered in web accessibility: <a href="https://github.com/mgifford/a11y-courses">a11y-courses</a>.</li>
 </ul>
 
+<h2 id="free-knowledge-resources">Free Knowledge Resources</h2>
+
+<ul>
+  <li><a href="https://html5doctor.com/">html5doctor.com</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/">MDN web docs</a></li>
+  <li><a href="https://www.w3.org/WAI/tutorials/">Web Accessibility Tutorials</a> by the W3C (highly recommended)</li>
+  <li><a href="https://webaim.org/">WebAIM articles and resources</a></li>
+  <li><a href="http://www.webaxe.org/">WebAxe</a>, blog and podcast on web accessibility</li>
+  <li><a href="http://a11yweekly.com/">A11yWeekly</a>, A weekly dose of web accessibility, by David A. Kennedy</li>
+  <li><a href="https://www.tpgi.com/blog/">TPGi, Inc</a> resources and blog</li>
+  <li><a href="https://www.a11y-collective.com/blog/">The A11y Collective</a> courses and articles</li>
+</ul>
+
+<h2 id="pattern-libraries">Pattern libraries</h2>
+
+<ul>
+  <li><a href="https://a11yproject.com/">The A11y project</a></li>
+  <li><a href="https://inclusive-components.design/">Inclusive Components</a>, pattern library, with a focus on inclusive design</li>
+  <li><a href="https://patternlib.medway.gov.uk/">GOV.UK elements</a></li>
+  <li><a href="https://dequeuniversity.com/resources/">Deque University Code Examples and Accessibility Resources</a></li>
+</ul>
+
+<h2 id="books">Books</h2>
+
+<ul>
+  <li><a href="https://shop.smashingmagazine.com/products/inclusive-design-patterns">Inclusive Design Patterns by Heydon Pickering</a></li>
+  <li><a href="https://www.smashingmagazine.com/printed-books/inclusive-components/">Inclusive Components, by Heydon Pickering</a></li>
+  <li><a href="https://abookapart.com/products/accessibility-for-everyone">Accessibility for Everyone by Laura Kalbag</a></li>
+  <li><a href="https://www.accessibility.uxdesign.cc/">Giving a Damn About Accessibility, by Sheri Byrne-Haber</a></li>
+  <li><a href="https://www.lflegal.com/book/structured-negotiation/">Structured Negotiation: A Winning Alternative to Lawsuits, by Lainey Feingold</a></li>
+  <li><a href="https://www.sitepoint.com/premium/books/accessibility-and-inclusive-design-why-they-re-not-the-same/">Accessibility and Inclusive Design: Why They’re Not the Same, by Derek Featherstone</a></li>
+  <li><a href="https://www.smashingmagazine.com/printed-books/form-design-patterns/">Form Design Patterns, by Adam Silver</a></li>
+  <li><a href="https://www.oreilly.com/library/view/a11y-unraveled-become/9781484290859/">A11y Unraveled: Become a Web Accessibility Ninja, by Dimitris Georgakas</a></li>
+  <li><a href="http://www.webaxe.org/web-accessibility-books/">List of Web Accessibility Books on WebAxe</a></li>
+</ul>
+
+<h2 id="educational--discussion">Educational &amp; Discussion</h2>
+
+<p>Sometimes, what you’re building doesn’t have an already-available accessible pattern on the web. In cases like these, it can be helpful to consult someone who works day-to-day in the accessibility field in order to save yourself the pain of having to figure it out all on your own. There are a few resources you may find helpful.</p>
+
+<h3 id="the-webaim-mailing-list">The WebAIM mailing list</h3>
+
+<p>The <a href="https://webaim.org/discussion/">WebAIM mailing list</a> is a long-running community forum for everyone who wants to grow in their accessibility journey, from beginner to expert. The archives span decades, and are available to search through. if you need to find the solution to a problem, or need help creating one, and you don’t know what question to ask when searching the archives, list members are very friendly and always willing to help, without judgment.</p>
 
 
           
