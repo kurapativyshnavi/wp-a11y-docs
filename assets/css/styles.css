@@ -1487,6 +1487,9 @@ p.do-title > p:first-child {
     max-width: 33.5rem;
     height: 100% !important;
     transition: width ease 400ms;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
 
@@ -1503,6 +1506,8 @@ p.do-title > p:first-child {
 }
 @media (min-width: 50rem) {
   .search-input {
+    position: relative;
+    flex-grow: 1;
     padding: 0.5rem 1rem 0.5rem 3.5rem;
     font-size: 0.875rem;
     background-color: #fff;
@@ -1514,6 +1519,23 @@ p.do-title > p:first-child {
 }
 .search-input:focus + .search-label .search-icon {
   color: #3858e9;
+}
+
+.search-submit {
+  display: none;
+}
+@media (min-width: 50rem) {
+  .search-submit {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3858e9;
+    border: 1px solid #3858e9;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }
 
 .search-label {
